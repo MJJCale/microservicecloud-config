@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active:
+    - dev
+# 以3个减号作为分隔符，分隔不同服务对应的配置文件
+--- 
+spring:
+  profiles: dev     #开发环境
+  application: 
+    name: microservicecloud-config-atguigu-dev  # spring.application.name倒是老朋友了，注册进eureka服务器的服务名就是这个
+---
+spring:
+  profiles: test   #测试环境
+  application: 
+    name: microservicecloud-config-atguigu-test
+#  请保存为UTF-8格式
+ 
+ 
+
